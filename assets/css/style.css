@@ -1,0 +1,131 @@
+/***Fira Sans Font*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Sans", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+header,
+section {
+    background-color: #F5F5F5;
+}
+
+button {
+    cursor: pointer;
+}
+
+/*theme colors*/
+:root {
+    --primary-color: #C6E4D6;
+    --secondary-color: #006A50;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 20px 0;
+}
+
+header .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header-wrapper .logo>h2 {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+header .header-wrapper .logo>h2>a {
+    color: black
+}
+
+header .header-wrapper>nav>ul>li>button {
+    padding: 12px 25px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #F5F5F5;
+    transition: .6s;
+} 
+header .header-wrapper>nav>ul>li>button:hover{
+    background-color: var(--secondary-color);
+    color: white;
+    transition: .6s;
+}
+section.hero-section .hero-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--primary-color);
+    padding: 65px 85px;
+    gap: 50px;
+    border-radius: 20px;
+}
+
+section.hero-section .hero-wrapper .hero-content>span {
+    font-size: 20px;
+    font-weight: 500;
+    color: #6A7972;
+}
+
+section.hero-section .hero-wrapper .hero-content>h1 {
+    font-size: 43px;
+    font-weight: 700;
+    color: #0E0E0E;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.action-button {
+    padding: 13px 26px;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: var(--secondary-color);
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    transition: .6s;
+}
+.action-button:hover {
+    background-color: white;
+    color: var(--secondary-color);
+    transition: .6s;
+}
+section.hero-section .hero-wrapper .hero-content {
+    width: 55%;
+}
+
+section.hero-section .hero-wrapper .hero-image {
+    width: 45%;
+}
+
+section.hero-section .hero-wrapper .hero-image>img {
+    width: 100%;
+}
+
+section.hero-section {
+    padding: 20px 0;
+}
+
