@@ -322,7 +322,7 @@ section.hero-section {
 }
 
 .quote-area .quote-wrapper {
-    background-image: url(/assets/images/quote-bg.png);
+    background-image: url(../images/quote-bg.png);
     background-repeat: no-repeat;
     background-position: top left;
     padding-block: 25px;
