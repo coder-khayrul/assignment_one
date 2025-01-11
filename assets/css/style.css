@@ -97,6 +97,7 @@ header .header-wrapper>nav>ul>li>button:hover {
     background-color: var(--secondary-color);
     color: white;
     transition: .6s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 /** header style end */
@@ -143,6 +144,7 @@ section.hero-section .hero-wrapper .hero-content>h1 {
     color: var(--secondary-color);
     border-color: var(--secondary-color);
     transition: .6s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 section.hero-section .hero-wrapper .hero-content {
@@ -211,10 +213,13 @@ section.hero-section {
     color: #535353;
     line-height: 1.3rem;
 }
+
 .pillars-container .single-pillar:hover {
     background: var(--primary-color);
     transition: .6s;
+    transform: translate(0px, -7px);
 }
+
 /** pillars section style end*/
 
 
@@ -261,6 +266,11 @@ section.hero-section {
     color: #5490F5;
 }
 
+.vision-boxes .single-vision-box:hover {
+    transform: translate(0px, -7px);
+    transition: .6s;
+}
+
 .vision-boxes .single-vision-box:nth-child(2)>button:hover {
     background: white;
     color: #09A15C;
@@ -286,26 +296,29 @@ section.hero-section {
 .vision-boxes .single-vision-box>p {
     margin-bottom: 20px;
 }
-.vision-boxes .single-vision-box:first-child:hover > h3 {
+
+.vision-boxes .single-vision-box:first-child:hover>h3 {
     color: #5490F5;
     transition: .6s;
 }
 
-.vision-boxes .single-vision-box:nth-child(2):hover > h3 {
+.vision-boxes .single-vision-box:nth-child(2):hover>h3 {
     color: #09A15C;
     transition: .6s;
 }
 
-.vision-boxes .single-vision-box:last-child:hover > h3 {
+.vision-boxes .single-vision-box:last-child:hover>h3 {
     color: #FFC239;
     transition: .6s;
 }
+
 /*quote area style*/
 .quote-area {
     padding: 15px 20px;
     background: white;
     border-radius: 13px;
     margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
 }
 
 .quote-area .quote-wrapper {
@@ -354,6 +367,7 @@ section.hero-section {
 .opinion-table-wrapper table {
     border-collapse: collapse;
     width: 100%;
+    border-color: #C0C0C0;
 }
 
 .opinion-table-wrapper table>thead>tr {
@@ -468,7 +482,8 @@ section.hero-section {
     gap: 15px;
     margin-bottom: 10px;
 }
-.news-cards .single-news:hover .news-content >h3 {
+
+.news-cards .single-news:hover .news-content>h3 {
     color: var(--secondary-color);
     transition: .6s;
 }
@@ -480,10 +495,11 @@ section.hero-section {
     transition: .6s;
 }
 
-.news-cards .single-news:hover .news-image > img {
+.news-cards .single-news:hover .news-image>img {
     transform: scale(1.3);
     transition: .6s;
 }
+
 /** news section style end*/
 
 /** Donate section style start*/
@@ -517,7 +533,7 @@ form#donate-form>.box-container .single-donate-box {
     justify-content: center;
     transition: .6s;
     cursor: pointer;
-    border: 1px solid rgba(14,14,14,.2);
+    border: 1px solid rgba(14, 14, 14, .2);
 }
 
 form#donate-form {
@@ -536,10 +552,12 @@ form#donate-form {
     border: 1px solid transparent;
     transition: .6s;
 }
+
 .donate-custom-field input#donate-input:focus {
     border-color: var(--secondary-color);
     transition: .6s;
 }
+
 form#donate-form>.box-container .single-donate-box:hover {
     background: var(--secondary-color);
     color: white;
@@ -609,9 +627,11 @@ div#newsletter-form input:focus {
     border-color: var(--secondary-color);
     transition: .6s;
 }
+
 section.newsletter-section.section-gap {
     padding-bottom: 68px;
 }
+
 /** Newsletter section style end*/
 
 
@@ -627,10 +647,12 @@ section.newsletter-section.section-gap {
 .footer-title {
     margin-bottom: 20px;
 }
-hr{
+
+hr {
     width: 950px;
-    border-color: rgba(14, 14, 14,.1);
+    border-color: rgba(14, 14, 14, .1);
 }
+
 .footer-wrapper {
     display: flex;
     flex-direction: column;
@@ -649,6 +671,3 @@ hr{
 }
 
 /** footer  style end*/
-
-
-
