@@ -37,7 +37,10 @@ button {
     --primary-color: #C6E4D6;
     --secondary-color: #006A50;
 }
-
+::selection{
+    background-color: var(--secondary-color);
+    color: white;
+}
 .container {
     width: 80%;
     margin: 0 auto;
@@ -161,7 +164,7 @@ section.hero-section {
 
 /** pillars section style start*/
 .section-header {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
 }
 
 .pillars-container {
@@ -297,6 +300,7 @@ section.hero-section {
     color: rgba(14, 14, 14, 0.8);
     line-height: 1.4rem;
 }
+
 .quote-area .quote-wrapper .quote-info {
     display: flex;
     flex-direction: column;
@@ -304,15 +308,259 @@ section.hero-section {
     gap: 8px;
 }
 
-.quote-area .quote-wrapper .quote-info > strong {
+.quote-area .quote-wrapper .quote-info>strong {
     font-weight: 600;
     font-size: 17px;
-    color: rgba(14,14,14,0.8);
+    color: rgba(14, 14, 14, 0.8);
 }
 
-.quote-area .quote-wrapper .quote-info > span {
+.quote-area .quote-wrapper .quote-info>span {
     font-size: 13px;
     font-weight: 400;
-    color: rgba(14,14,14,.6);
+    color: rgba(14, 14, 14, .6);
 }
+
 /** vision section style end*/
+
+/** opinion section style start*/
+
+.opinion-table-wrapper {
+    padding: 27px;
+    background: white;
+    border-radius: 13px;
+}
+
+.opinion-table-wrapper table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.opinion-table-wrapper table>thead>tr {
+    background-color: var(--primary-color);
+}
+
+.opinion-table-wrapper table>thead>tr>th:first-child {
+    border-right: none;
+}
+
+.opinion-table-wrapper table>thead>tr>th {
+    font-size: 17px;
+    font-weight: 600;
+    color: #0E0E0E;
+    padding: 20px;
+    text-align: left;
+    border-left: none;
+}
+
+.opinion-table-wrapper table td {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0E0E0E;
+    padding: 20px;
+}
+
+.opinion-table-wrapper table td>select {
+    border: 1px solid #0E0E0E;
+    background-color: var(--primary-color);
+    padding: 8px 11px;
+    font-weight: 500;
+    font-size: 13px;
+    border-radius: 3px;
+    outline: none;
+
+}
+
+.opinion-table-wrapper table td:last-child {
+    width: 153px;
+    text-align: center;
+}
+
+/** opinion section style end*/
+
+/** news section style start*/
+.news-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.news-cards .single-news {
+    display: flex;
+    gap: 27px;
+    align-items: center;
+    padding: 40px;
+    border-radius: 20px;
+    background: white;
+}
+
+.news-cards .single-news .news-image {
+    width: 345px;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.news-cards .single-news .news-image>img {
+    width: 100%;
+    height: 100%;
+}
+
+.news-cards .single-news .news-content {
+    width: calc(100% - 370px);
+}
+
+.news-cards .single-news .news-content>h3 {
+    font-weight: 700;
+    font-size: 27px;
+    color: rgba(14, 14, 14, .8);
+    margin-bottom: 15px;
+}
+
+.news-cards .single-news .news-content>.news-source {
+    width: 113px;
+    height: 34px;
+    margin-bottom: 15px;
+}
+
+.news-cards .single-news .news-content>.news-source>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-cards .single-news .news-content>p {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(14, 14, 14, .7);
+    line-height: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.news-cards .single-news .news-content .news-info {
+    font-size: 13px;
+    color: rgba(14, 14, 14, .7);
+    font-weight: 400;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+/** news section style end*/
+
+/** Donate section style start*/
+section.donate-section h2.section-title,
+.newsletter-section h2.section-title {
+    text-align: center;
+}
+
+section.donate-section p.section-description,
+.newsletter-section p.section-description {
+    text-align: center;
+}
+
+form#donate-form>.box-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+form#donate-form>.box-container .single-donate-box {
+    background: white;
+    border-radius: 20px;
+    font-size: 34px;
+    font-weight: 700;
+    color: rgba(14, 14, 14, .8);
+    flex: 1 1 calc(25% - 20px);
+    width: 204px;
+    height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .6s;
+    cursor: pointer;
+}
+
+form#donate-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.donate-custom-field input#donate-input {
+    width: calc(100% - 68px);
+    outline: none;
+    text-align: center;
+    padding: 17px 34px;
+    font-size: 17px;
+    color: #0e0e0e;
+    border: 1px solid transparent;
+}
+
+form#donate-form>.box-container .single-donate-box:hover {
+    background: var(--secondary-color);
+    color: white;
+    transition: .6s;
+}
+
+.donate-form-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** Donate section style end*/
+
+/** Newsletter section style start*/
+
+div#newsletter-form {
+    width: 635px;
+    height: 45px;
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 22px;
+}
+
+div#newsletter-form input {
+    width: 100%;
+    outline: none;
+    height: calc(100% - 2px);
+    border: 1px solid transparent;
+    font-size: 13px;
+    font-weight: 400;
+    color: #0e0e0e;
+    padding-inline: 25px;
+    transition: .6s;
+    border-radius: 7px;
+}
+
+.newsletter-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    padding-block: 68px;
+    border-radius: 20px;
+}
+div#newsletter-form > button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 7px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    padding-block: 0;
+    height: 100%;
+}
+
+.newsletter-wrapper > p {
+    font-size: 13px;
+    color: rgba(14,14,14,.7);
+    font-weight: 400;
+}
+div#newsletter-form input:focus {
+    border-color: var(--secondary-color);
+    transition: .6s;
+}
+/** Newsletter section style end*/
