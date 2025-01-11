@@ -584,7 +584,7 @@ div#newsletter-form {
 }
 
 div#newsletter-form input {
-    width: 100%;
+    width: calc(100% - 165px);
     outline: none;
     height: calc(100% - 2px);
     border: 1px solid transparent;
@@ -594,6 +594,7 @@ div#newsletter-form input {
     padding-inline: 25px;
     transition: .6s;
     border-radius: 7px;
+    padding-right: 140px;
 }
 
 .newsletter-wrapper {
