@@ -535,7 +535,11 @@ form#donate-form>.box-container .single-donate-box {
     cursor: pointer;
     border: 1px solid rgba(14, 14, 14, .2);
 }
-
+/*selected donate box*/
+form#donate-form>.box-container .single-donate-box.selected{
+    background: var(--primary-color);
+    transition: .6s;
+}
 form#donate-form {
     display: flex;
     flex-direction: column;
@@ -559,8 +563,7 @@ form#donate-form {
 }
 
 form#donate-form>.box-container .single-donate-box:hover {
-    background: var(--secondary-color);
-    color: white;
+    background: var(--primary-color);
     transition: .6s;
 }
 
